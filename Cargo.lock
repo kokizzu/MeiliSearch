@@ -12,7 +12,7 @@ dependencies = [
  "futures-sink",
  "log",
  "pin-project 0.4.27",
- "tokio",
+ "tokio 0.2.24",
  "tokio-util",
 ]
 
@@ -135,7 +135,7 @@ dependencies = [
  "futures-channel",
  "futures-util",
  "smallvec",
- "tokio",
+ "tokio 0.2.24",
 ]
 
 [[package]]
@@ -1195,7 +1195,7 @@ dependencies = [
  "http",
  "indexmap",
  "slab",
- "tokio",
+ "tokio 0.2.24",
  "tokio-util",
  "tracing",
  "tracing-futures",
@@ -1360,7 +1360,7 @@ dependencies = [
  "itoa",
  "pin-project 1.0.4",
  "socket2",
- "tokio",
+ "tokio 0.2.24",
  "tower-service",
  "tracing",
  "want",
@@ -1377,7 +1377,7 @@ dependencies = [
  "hyper",
  "log",
  "rustls 0.18.1",
- "tokio",
+ "tokio 0.2.24",
  "tokio-rustls",
  "webpki",
 ]
@@ -1732,7 +1732,7 @@ dependencies = [
  "tar",
  "tempdir",
  "tempfile",
- "tokio",
+ "tokio 1.0.1",
  "ureq",
  "vergen",
  "walkdir",
@@ -2461,7 +2461,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "tokio",
+ "tokio 0.2.24",
  "tokio-rustls",
  "url",
  "wasm-bindgen",
@@ -3132,15 +3132,25 @@ dependencies = [
  "pin-project-lite 0.1.11",
  "signal-hook-registry",
  "slab",
- "tokio-macros",
  "winapi 0.3.9",
 ]
 
 [[package]]
-name = "tokio-macros"
-version = "0.2.6"
+name = "tokio"
+version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e44da00bfc73a25f814cd8d7e57a68a5c31b74b3152a0a1d1f590c97ed06265a"
+checksum = "d258221f566b6c803c7b4714abadc080172b272090cdc5e244a6d4dd13c3a6bd"
+dependencies = [
+ "autocfg",
+ "pin-project-lite 0.2.4",
+ "tokio-macros",
+]
+
+[[package]]
+name = "tokio-macros"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42517d2975ca3114b22a16192634e8241dc5cc1f130be194645970cc1c371494"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3155,7 +3165,7 @@ checksum = "e12831b255bcfa39dc0436b01e19fea231a37db570686c06ee72c423479f889a"
 dependencies = [
  "futures-core",
  "rustls 0.18.1",
- "tokio",
+ "tokio 0.2.24",
  "webpki",
 ]
 
@@ -3170,7 +3180,7 @@ dependencies = [
  "futures-sink",
  "log",
  "pin-project-lite 0.1.11",
- "tokio",
+ "tokio 0.2.24",
 ]
 
 [[package]]
@@ -3226,7 +3236,7 @@ dependencies = [
  "rand 0.7.3",
  "smallvec",
  "thiserror",
- "tokio",
+ "tokio 0.2.24",
  "url",
 ]
 
@@ -3246,7 +3256,7 @@ dependencies = [
  "resolv-conf",
  "smallvec",
  "thiserror",
- "tokio",
+ "tokio 0.2.24",
  "trust-dns-proto",
 ]
 
